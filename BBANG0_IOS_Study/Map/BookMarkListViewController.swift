@@ -1,18 +1,13 @@
 //
-//  BakeryListViewController.swift
+//  BookMarkListViewController.swift
 //  BBANG0_IOS_Study
 //
-//  Created by 이민섭 on 2022/08/04.
+//  Created by 이민섭 on 2022/08/23.
 //
-
-
-//각 셀을 누르면 present modal로 Navigation controller 띄우기 
 
 import UIKit
 
-
-
-class BakeryListViewController: UIViewController {
+class BookMarkListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
