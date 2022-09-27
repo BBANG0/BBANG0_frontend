@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lQK-Vk-1kq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bakery Info Master View Controller-->
+        <scene sceneID="fej-bg-NrN">
+            <objects>
+                <viewController storyboardIdentifier="BakeryInfoMasterVC" id="lQK-Vk-1kq" customClass="BakeryInfoMasterViewController" customModule="BBANG0_frontend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ei-9E-jjM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVw-BH-kUJ">
+                                <rect key="frame" x="16" y="816" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Pn-DN-wuf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="mainColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="상품 관리">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qyn-4S-WUS" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="fcs-go-hwB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storeImage_02" translatesAutoresizingMaskIntoConstraints="NO" id="TLd-94-zhZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BSh-WO-jTc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgi-6P-j7x">
+                                <rect key="frame" x="173" y="56" width="68" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="bHT-Pt-nA1"/>
+                                    <constraint firstAttribute="height" constant="25" id="hht-QI-fXV"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="하루 한빵">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-YF-JBg">
+                                <rect key="frame" x="16" y="58.5" width="12" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="KUu-UL-t5G"/>
+                                    <constraint firstAttribute="width" constant="12" id="KgM-NV-P0o"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector(white)"/>
+                                <connections>
+                                    <action selector="backBtnDidTap:" destination="lQK-Vk-1kq" eventType="touchUpInside" id="fSt-Am-Kxv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5H-fc-h7T">
+                                <rect key="frame" x="372" y="56.5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="RXx-ZA-lYV"/>
+                                    <constraint firstAttribute="height" constant="24" id="TqE-iL-uOx"/>
+                                </constraints>
+                                <color key="tintColor" red="0.97254908080000002" green="0.97254908080000002" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="text.justify" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="가게 관리  -주인 버전 밑에 상품관리 버튼" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-gP-oCd">
+                                <rect key="frame" x="67" y="398" width="280" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RuH-qh-I77"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RuH-qh-I77" firstAttribute="trailing" secondItem="H5H-fc-h7T" secondAttribute="trailing" constant="18" id="2Ke-Ft-C8W"/>
+                            <constraint firstItem="RuH-qh-I77" firstAttribute="trailing" secondItem="DVw-BH-kUJ" secondAttribute="trailing" constant="16" id="53W-Hd-mYX"/>
+                            <constraint firstItem="i7v-YF-JBg" firstAttribute="centerY" secondItem="hgi-6P-j7x" secondAttribute="centerY" id="7ol-3L-8Cg"/>
+                            <constraint firstItem="TLd-94-zhZ" firstAttribute="leading" secondItem="RuH-qh-I77" secondAttribute="leading" id="9cr-9l-FRr"/>
+                            <constraint firstItem="H5H-fc-h7T" firstAttribute="centerY" secondItem="hgi-6P-j7x" secondAttribute="centerY" id="JmR-TC-R9n"/>
+                            <constraint firstItem="RuH-qh-I77" firstAttribute="trailing" secondItem="TLd-94-zhZ" secondAttribute="trailing" id="MOK-bv-WKW"/>
+                            <constraint firstAttribute="bottom" secondItem="DVw-BH-kUJ" secondAttribute="bottom" constant="30" id="TRU-S5-rrS"/>
+                            <constraint firstItem="hgi-6P-j7x" firstAttribute="centerX" secondItem="8Ei-9E-jjM" secondAttribute="centerX" id="bdx-8h-xSv"/>
+                            <constraint firstItem="DVw-BH-kUJ" firstAttribute="centerX" secondItem="8Ei-9E-jjM" secondAttribute="centerX" id="cFn-rg-8wJ"/>
+                            <constraint firstItem="DVw-BH-kUJ" firstAttribute="leading" secondItem="RuH-qh-I77" secondAttribute="leading" constant="16" id="eJk-63-Aw1"/>
+                            <constraint firstItem="TLd-94-zhZ" firstAttribute="top" secondItem="8Ei-9E-jjM" secondAttribute="top" id="gcA-1h-dPr"/>
+                            <constraint firstItem="i7v-YF-JBg" firstAttribute="leading" secondItem="RuH-qh-I77" secondAttribute="leading" constant="16" id="gfF-Ei-lWq"/>
+                            <constraint firstItem="hgi-6P-j7x" firstAttribute="top" secondItem="8Ei-9E-jjM" secondAttribute="top" constant="56" id="oXB-SY-Xwn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2n-tb-p5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2834.7826086956525" y="847.76785714285711"/>
+        </scene>
+        <!--MasterAddVC-->
+        <scene sceneID="wKp-OS-tmf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MasterAdd2VC" storyboardName="MasterAdd" referencedIdentifier="MasterAddVC" id="qyn-4S-WUS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kli-Wj-Nz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3653.6231884057975" y="847.76785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Vector(white)" width="12" height="20"/>
+        <image name="storeImage_02" width="1260" height="696"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
+        <namedColor name="mainColor">
+            <color red="0.96470588235294119" green="0.71372549019607845" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
