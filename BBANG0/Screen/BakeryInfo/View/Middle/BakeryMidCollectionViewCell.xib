@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BakeryMidCollectionViewCell" id="gTV-IL-0wX" customClass="BakeryMidCollectionViewCell" customModule="BBANG0_IOS_Study" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="리뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-cM-Sto">
+                        <rect key="frame" x="17" y="44" width="32" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="114" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3u-at-cea">
+                        <rect key="frame" x="52" y="44" width="28" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" name="OrangeButtonColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJb-87-Qd3">
+                        <rect key="frame" x="267" y="38" width="98" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="square.and.pencil" catalog="system" title="리뷰 작성 ">
+                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="baseForegroundColor" name="OrangeButtonColor"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gp5-cM-Sto" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="44" id="0il-IU-SzF"/>
+                <constraint firstItem="gp5-cM-Sto" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="17" id="59S-NR-jh8"/>
+                <constraint firstItem="hJb-87-Qd3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="38" id="RWP-JF-aOb"/>
+                <constraint firstAttribute="trailing" secondItem="hJb-87-Qd3" secondAttribute="trailing" constant="10" id="l5h-sT-tnB"/>
+                <constraint firstItem="p3u-at-cea" firstAttribute="leading" secondItem="gp5-cM-Sto" secondAttribute="trailing" constant="3" id="pMw-KT-kqC"/>
+                <constraint firstItem="p3u-at-cea" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="44" id="wCN-4o-dJ8"/>
+            </constraints>
+            <size key="customSize" width="375" height="92"/>
+            <connections>
+                <outlet property="ReviewNumberLabel" destination="p3u-at-cea" id="jEA-eN-Iei"/>
+            </connections>
+            <point key="canvasLocation" x="367.39130434782612" y="59.598214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <namedColor name="OrangeButtonColor">
+            <color red="0.96470588235294119" green="0.71372549019607845" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

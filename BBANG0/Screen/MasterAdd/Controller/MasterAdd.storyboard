@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master Add View Controller-->
+        <scene sceneID="gt4-1i-ofs">
+            <objects>
+                <viewController storyboardIdentifier="MasterAddVC" id="23m-HK-C2K" customClass="MasterAddViewController" customModule="BBANG0_frontend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IcL-L6-9Ec">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="상품 등록 화면 배경" id="eZv-0M-Eqn">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xhv-Jg-sXw">
+                                <rect key="frame" x="0.0" y="81" width="390" height="763"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPU-q8-biQ">
+                                <rect key="frame" x="198.66666666666663" y="764" width="175.33333333333337" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hjo-L7-pi2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="상품추가Color"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="상품 추가">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="yCI-V6-xjY" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="kZ3-XL-JLW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20Q-9H-Oy9">
+                                <rect key="frame" x="161" y="56" width="68" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="FkL-2J-n30"/>
+                                    <constraint firstAttribute="width" constant="68" id="G2U-Nn-eR9"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="상품 관리">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wJ-6m-QI7">
+                                <rect key="frame" x="16" y="58.666666666666657" width="12" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="0ta-ch-CuM"/>
+                                    <constraint firstAttribute="height" constant="20" id="FCa-iP-QDb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector"/>
+                                <connections>
+                                    <action selector="backBtnDidTap:" destination="23m-HK-C2K" eventType="touchUpInside" id="8Al-eO-odG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pJ-oE-xwR">
+                                <rect key="frame" x="16" y="764" width="175.66666666666666" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5w2-Xf-88T"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="mainColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="타임세일 시작">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j9R-bm-5SV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3pJ-oE-xwR" firstAttribute="leading" secondItem="j9R-bm-5SV" secondAttribute="leading" constant="16" id="0A2-Ac-gFP"/>
+                            <constraint firstItem="3pJ-oE-xwR" firstAttribute="centerY" secondItem="cPU-q8-biQ" secondAttribute="centerY" id="2KC-9W-NVZ"/>
+                            <constraint firstItem="1wJ-6m-QI7" firstAttribute="leading" secondItem="j9R-bm-5SV" secondAttribute="leading" constant="16" id="9rB-lf-CY8"/>
+                            <constraint firstAttribute="bottom" secondItem="cPU-q8-biQ" secondAttribute="bottom" constant="30" id="Bws-ub-Uqy"/>
+                            <constraint firstItem="Xhv-Jg-sXw" firstAttribute="top" secondItem="20Q-9H-Oy9" secondAttribute="bottom" id="EFw-Iq-yZv"/>
+                            <constraint firstItem="cPU-q8-biQ" firstAttribute="width" secondItem="3pJ-oE-xwR" secondAttribute="width" id="EPT-pb-bma"/>
+                            <constraint firstItem="j9R-bm-5SV" firstAttribute="trailing" secondItem="cPU-q8-biQ" secondAttribute="trailing" constant="16" id="HUM-Ow-l9t"/>
+                            <constraint firstItem="20Q-9H-Oy9" firstAttribute="top" secondItem="IcL-L6-9Ec" secondAttribute="top" constant="56" id="MMZ-hB-XIa"/>
+                            <constraint firstAttribute="bottom" secondItem="Xhv-Jg-sXw" secondAttribute="bottom" id="Mh2-gL-a30"/>
+                            <constraint firstItem="cPU-q8-biQ" firstAttribute="leading" secondItem="3pJ-oE-xwR" secondAttribute="trailing" constant="7" id="OKx-RB-btc"/>
+                            <constraint firstItem="1wJ-6m-QI7" firstAttribute="centerY" secondItem="20Q-9H-Oy9" secondAttribute="centerY" id="Q2n-4Z-2bb"/>
+                            <constraint firstItem="20Q-9H-Oy9" firstAttribute="centerX" secondItem="IcL-L6-9Ec" secondAttribute="centerX" id="kx9-eb-9JG"/>
+                            <constraint firstItem="Xhv-Jg-sXw" firstAttribute="trailing" secondItem="j9R-bm-5SV" secondAttribute="trailing" id="pu8-TP-Roo"/>
+                            <constraint firstItem="Xhv-Jg-sXw" firstAttribute="leading" secondItem="j9R-bm-5SV" secondAttribute="leading" id="ueG-fT-Khw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Xhv-Jg-sXw" id="Bhi-Dr-OF6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osp-1N-KPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652.3076923076924" y="847.39336492890993"/>
+        </scene>
+        <!--MasterEditVC-->
+        <scene sceneID="NUb-sL-dx0">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MasterEditVC" storyboardName="MasterEdit" referencedIdentifier="MasterEditVC" id="yCI-V6-xjY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evk-nF-3Rn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4466.666666666667" y="847.76785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Vector" width="12" height="20"/>
+        <image name="상품 등록 화면 배경" width="1500" height="3248"/>
+        <namedColor name="mainColor">
+            <color red="0.96470588235294119" green="0.71372549019607845" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="상품추가Color">
+            <color red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
